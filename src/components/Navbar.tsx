@@ -37,7 +37,6 @@ const Navbar: React.FC = () => {
               <a href="#servicos" className="text-black hover:text-primary transition-colors font-bold">Serviços</a>
               <a href="#sobre" className="text-black hover:text-primary transition-colors font-bold">Sobre</a>
               <a href="#depoimentos" className="text-black hover:text-primary transition-colors font-bold">Depoimentos</a>
-              <a href="#contato" className="text-black hover:text-primary transition-colors font-bold">Contato</a>
             </div>
             
             <div className="flex items-center space-x-4 border-l pl-8 ml-4">
@@ -98,13 +97,6 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Depoimentos
-              </a>
-              <a 
-                href="#contato" 
-                className="text-black hover:text-primary py-2 transition-colors font-bold"
-                onClick={() => setIsOpen(false)}
-              >
-                Contato
               </a>
               <div className="border-t pt-3 space-y-2">
                 <a 
