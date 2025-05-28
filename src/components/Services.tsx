@@ -15,20 +15,34 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) =
       </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600 flex-grow">{description}</p>
-      <a 
-        href="#contato" 
-        className="mt-4 text-primary font-medium inline-flex items-center hover:text-primary-dark transition-colors"
-      >
-        Saiba mais
-        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-        </svg>
-      </a>
     </div>
   );
 };
 
 const Services: React.FC = () => {
+  const partners = [
+    {
+      name: "Santander",
+      logo: "https://images.pexels.com/photos/santander.png",
+    },
+    {
+      name: "Porto Bank",
+      logo: "https://images.pexels.com/photos/porto.png",
+    },
+    {
+      name: "Safra",
+      logo: "https://images.pexels.com/photos/safra.png",
+    },
+    {
+      name: "Banco BV",
+      logo: "https://images.pexels.com/photos/bv.png",
+    },
+    {
+      name: "Embracon",
+      logo: "https://images.pexels.com/photos/embracon.png",
+    },
+  ];
+
   return (
     <section id="servicos" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -39,7 +53,7 @@ const Services: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <ServiceCard 
             icon={<CreditCard className="h-6 w-6 text-primary" />}
             title="Crédito PJ"
@@ -75,6 +89,21 @@ const Services: React.FC = () => {
             title="Consultoria Financeira"
             description="Acompanhamento personalizado para tomada de decisões estratégicas, análise de investimentos e planejamento financeiro de curto, médio e longo prazo."
           />
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Nossos Parceiros</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            {partners.map((partner) => (
+              <div key={partner.name} className="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img 
+                  src={partner.logo} 
+                  alt={`Logo ${partner.name}`} 
+                  className="max-h-12 w-auto"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
