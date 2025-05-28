@@ -23,7 +23,7 @@ const Services: React.FC = () => {
   const partners = [
     {
       name: "Santander",
-      logo: "https://logodownload.org/wp-content/uploads/2014/06/santander-logo-0.png",
+      logo: "https://images.pexels.com/photos/santander.png",
     },
     {
       name: "Porto Bank",
