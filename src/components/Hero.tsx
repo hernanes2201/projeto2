@@ -2,6 +2,9 @@ import React from 'react';
 import { TrendingUp, ArrowRight, Phone, Mail } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
+  const whatsappLink = `https://wa.me/5561985976557?text=${whatsappMessage}`;
+
   return (
     <section 
       id="inicio" 
@@ -18,22 +21,24 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <a 
-                href="#contato" 
+                href="#servicos" 
                 className="bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
               >
-                Fale Comigo
+                Nossos Serviços
                 <ArrowRight size={18} className="ml-2" />
               </a>
               <a 
-                href="#servicos" 
+                href="#sobre" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
               >
-                Nossos Serviços
+                Saiba Mais
               </a>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               <a 
-                href="tel:+5561985976557" 
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white inline-flex items-center hover:text-accent transition-colors"
               >
                 <Phone size={18} className="mr-2" />

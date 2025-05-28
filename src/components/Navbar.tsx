@@ -18,6 +18,9 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
+  const whatsappLink = `https://wa.me/5561985976557?text=${whatsappMessage}`;
+
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -41,7 +44,9 @@ const Navbar: React.FC = () => {
             
             <div className="flex items-center space-x-4 border-l pl-8 ml-4">
               <a 
-                href="tel:+5561985976557" 
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
               >
                 <Phone size={18} className="mr-2" />
@@ -100,7 +105,9 @@ const Navbar: React.FC = () => {
               </a>
               <div className="border-t pt-3 space-y-2">
                 <a 
-                  href="tel:+5561985976557" 
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
                 >
                   <Phone size={18} className="mr-2" />
