@@ -23,23 +23,23 @@ const Services: React.FC = () => {
   const partners = [
     {
       name: "Santander",
-      logo: "https://images.pexels.com/photos/santander.png",
+      logo: "https://logodownload.org/wp-content/uploads/2014/06/santander-logo-0.png",
     },
     {
       name: "Porto Bank",
-      logo: "https://images.pexels.com/photos/porto.png",
+      logo: "https://logodownload.org/wp-content/uploads/2019/08/porto-seguro-logo-0.png",
     },
     {
       name: "Safra",
-      logo: "https://images.pexels.com/photos/safra.png",
+      logo: "https://logodownload.org/wp-content/uploads/2016/10/safra-logo-0.png",
     },
     {
       name: "Banco BV",
-      logo: "https://images.pexels.com/photos/bv.png",
+      logo: "https://logodownload.org/wp-content/uploads/2021/05/bv-banco-votorantim-logo-0.png",
     },
     {
       name: "Embracon",
-      logo: "https://images.pexels.com/photos/embracon.png",
+      logo: "https://embracon.com.br/wp-content/themes/embracon/assets/images/logo-embracon.svg",
     },
   ];
 
@@ -99,7 +99,7 @@ const Services: React.FC = () => {
                 <img 
                   src={partner.logo} 
                   alt={`Logo ${partner.name}`} 
-                  className="max-h-12 w-auto"
+                  className="max-h-12 w-auto object-contain"
                 />
               </div>
             ))}
