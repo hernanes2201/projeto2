@@ -2,6 +2,9 @@ import React from 'react';
 import { CreditCard, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
+  const whatsappLink = `https://wa.me/5561985976557?text=${whatsappMessage}`;
+
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -72,7 +75,9 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-accent mr-3 mt-0.5" />
                 <a 
-                  href="tel:+5561985976557"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   (61) 98597-6557
@@ -89,7 +94,9 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="tel:+5561985976557"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-accent hover:bg-accent/90 text-white py-2 px-4 rounded-lg font-medium mt-2 transition-colors"
                 >
                   Fale Conosco
