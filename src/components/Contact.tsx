@@ -45,6 +45,9 @@ const Contact: React.FC = () => {
     });
   };
 
+  const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
+  const whatsappLink = `https://wa.me/5561985976557?text=${whatsappMessage}`;
+
   return (
     <section id="contato" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -64,7 +67,14 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-black text-sm">Telefone</p>
-                    <p className="text-black font-medium">(61) 98597-6557</p>
+                    <a 
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black font-medium hover:text-accent transition-colors"
+                    >
+                      (61) 98597-6557
+                    </a>
                   </div>
                 </div>
                 
