@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreditCard, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { CreditCard, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
@@ -91,6 +91,12 @@ const Footer: React.FC = () => {
                 >
                   hernaneshgk@gmail.com
                 </a>
+              </li>
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 text-accent mr-3 mt-0.5" />
+                <span className="text-gray-400">
+                  Brasília - DF
+                </span>
               </li>
               <li>
                 <a 
