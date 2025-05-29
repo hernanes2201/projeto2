@@ -51,40 +51,40 @@ const Contact: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row bg-white rounded-xl shadow-xl overflow-hidden">
             <div className="lg:w-2/5 bg-primary p-8 md:p-12">
-              <h2 className="text-3xl font-bold text-white mb-6">Entre em Contato</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">Entre em Contato</h2>
               
-              <p className="text-white/90 mb-8">
+              <p className="text-black mb-8">
                 Estou à disposição para ajudar sua empresa a encontrar as melhores soluções financeiras. Entre em contato e vamos conversar sobre como posso contribuir para o crescimento do seu negócio.
               </p>
               
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-white/10 p-3 rounded-full mr-4">
-                    <Phone className="h-5 w-5 text-white" />
+                    <Phone className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="text-white/80 text-sm">Telefone</p>
-                    <p className="text-white font-medium">(61) 98597-6557</p>
+                    <p className="text-black text-sm">Telefone</p>
+                    <p className="text-black font-medium">(61) 98597-6557</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-white/10 p-3 rounded-full mr-4">
-                    <Mail className="h-5 w-5 text-white" />
+                    <Mail className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="text-white/80 text-sm">E-mail</p>
-                    <p className="text-white font-medium">hernaneshgk@gmail.com</p>
+                    <p className="text-black text-sm">E-mail</p>
+                    <p className="text-black font-medium">hernaneshgk@gmail.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-white/10 p-3 rounded-full mr-4">
-                    <MapPin className="h-5 w-5 text-white" />
+                    <MapPin className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="text-white/80 text-sm">Localização</p>
-                    <p className="text-white font-medium">Brasília - DF</p>
+                    <p className="text-black text-sm">Localização</p>
+                    <p className="text-black font-medium">Brasília - DF</p>
                   </div>
                 </div>
               </div>
