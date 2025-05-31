@@ -30,16 +30,16 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <CreditCard className="h-8 w-8 text-primary mr-2" />
-            <span className="text-xl font-bold text-primary">HGK Consultoria</span>
+            <CreditCard className={`h-8 w-8 ${isScrolled ? 'text-primary' : 'text-white'} mr-2`} />
+            <span className={`text-xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>HGK Consultoria</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex space-x-8">
-              <a href="#inicio" className="text-black hover:text-primary transition-colors font-bold">Início</a>
-              <a href="#servicos" className="text-black hover:text-primary transition-colors font-bold">Serviços</a>
-              <a href="#sobre" className="text-black hover:text-primary transition-colors font-bold">Sobre</a>
-              <a href="#depoimentos" className="text-black hover:text-primary transition-colors font-bold">Depoimentos</a>
+              <a href="#inicio" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary transition-colors font-bold`}>Início</a>
+              <a href="#servicos" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary transition-colors font-bold`}>Serviços</a>
+              <a href="#sobre" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary transition-colors font-bold`}>Sobre</a>
+              <a href="#depoimentos" className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-primary transition-colors font-bold`}>Depoimentos</a>
             </div>
             
             <div className="flex items-center space-x-4 border-l pl-8 ml-4">
@@ -47,14 +47,14 @@ const Navbar: React.FC = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
+                className={`${isScrolled ? 'text-primary' : 'text-white'} hover:text-primary-dark transition-colors inline-flex items-center`}
               >
                 <Phone size={18} className="mr-2" />
                 (61) 98597-6557
               </a>
               <a 
                 href="mailto:hernaneshgk@gmail.com" 
-                className="text-primary hover:text-primary-dark transition-colors inline-flex items-center"
+                className={`${isScrolled ? 'text-primary' : 'text-white'} hover:text-primary-dark transition-colors inline-flex items-center`}
               >
                 <Mail size={18} className="mr-2" />
                 hernaneshgk@gmail.com
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black"
+              className={isScrolled ? 'text-black' : 'text-white'}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
