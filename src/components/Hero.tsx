@@ -21,15 +21,6 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <a 
-                href="https://drive.google.com/file/d/1Lh15RwXZVZ3kPSG4Q7nC60jLLEdToJns/view?usp=drive_link" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
-              >
-                Nossos Serviços
-                <ArrowRight size={18} className="ml-2" />
-              </a>
-              <a 
                 href="#sobre" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
               >
