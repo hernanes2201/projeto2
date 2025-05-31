@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, ArrowRight, Phone, Mail } from 'lucide-react';
+import { TrendingUp, ArrowRight, Phone, Mail, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
@@ -36,6 +36,15 @@ const Hero: React.FC = () => {
                 Saiba Mais
               </a>
             </div>
+            <a 
+              href="https://drive.google.com/file/d/1Lh15RwXZVZ3kPSG4Q7nC60jLLEdToJns/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="inline-flex items-center bg-white text-primary hover:bg-white/90 py-3 px-6 rounded-lg font-medium transition-colors mb-6"
+            >
+              <Download size={18} className="mr-2" />
+              Download E-book Grátis
+            </a>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               <a 
                 href={whatsappLink}
