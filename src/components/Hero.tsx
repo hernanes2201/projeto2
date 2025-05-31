@@ -1,20 +1,9 @@
 import React from 'react';
-import { TrendingUp, ArrowRight, Phone, Mail, Download } from 'lucide-react';
+import { TrendingUp, ArrowRight, Phone, Mail } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const whatsappMessage = encodeURIComponent("Olá, estou interessado em saber mais sobre seus serviços de consultoria empresarial");
   const whatsappLink = `https://wa.me/5561985976557?text=${whatsappMessage}`;
-
-  const handleDownloadEbook = () => {
-    // You can replace this URL with your actual ebook PDF URL
-    const ebookUrl = '/ebook-consultoria-financeira.pdf';
-    const link = document.createElement('a');
-    link.href = ebookUrl;
-    link.download = 'Guia-Completo-Consultoria-Financeira.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <section 
@@ -32,19 +21,20 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <a 
-                href="#servicos" 
+                href="https://drive.google.com/file/d/1Lh15RwXZVZ3kPSG4Q7nC60jLLEdToJns/view?usp=drive_link" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-accent hover:bg-accent/90 text-white py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
               >
                 Nossos Serviços
                 <ArrowRight size={18} className="ml-2" />
               </a>
-              <button 
-                onClick={handleDownloadEbook}
-                className="bg-white text-primary hover:bg-white/90 py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
+              <a 
+                href="#sobre" 
+                className="bg-transparent border-2 border-white text-white hover:bg-white/10 py-3 px-6 rounded-lg font-medium inline-flex items-center justify-center transition-colors"
               >
-                Download E-book Grátis
-                <Download size={18} className="ml-2" />
-              </button>
+                Saiba Mais
+              </a>
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               <a 
